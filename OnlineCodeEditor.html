@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini CodePen – Online Compiler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Mini CodePen</h1>
+
+  <div class="buttons">
+    <button onclick="runCode()">Run ▶</button>
+    <button onclick="addFile()">+ File</button>
+    <button onclick="openFile()">Upload</button>
+    <button onclick="downloadZIP()">Download</button>
+    <button onclick="toggleFullscreen()">Fullscreen</button>
+    <button onclick="resetEditors()">Reset</button>
+
+    <input type="file" id="fileInput" multiple hidden>
+  </div>
+</header>
+
+
+<!-- FILE TABS -->
+<div class="tabs" id="tabs"></div>
+
+
+<!-- EDITORS -->
+<div class="container">
+
+  <div class="editor">
+    <h3 id="currentFile">File</h3>
+    <textarea id="codeEditor"></textarea>
+  </div>
+
+</div>
+
+
+<!-- OUTPUT -->
+<div class="output-section">
+  <iframe id="output"></iframe>
+  <div id="errorBox"></div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

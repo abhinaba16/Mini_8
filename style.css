@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f4037, #99f2c8);
+  min-height: 100vh;
+}
+
+
+/* HEADER */
+
+header {
+  padding: 15px;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+.buttons button {
+  margin-left: 6px;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #00e0ff;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* TABS */
+
+.tabs {
+  display: flex;
+  background: rgba(0,0,0,0.35);
+  padding: 5px;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 6px 14px;
+  margin-right: 6px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tab.active {
+  background: #00e0ff;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* EDITOR */
+
+.container {
+  padding: 15px;
+}
+
+.editor {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.editor h3 {
+  color: white;
+  margin-bottom: 6px;
+}
+
+textarea {
+  width: 100%;
+  height: 260px;
+  background: #111;
+  color: #00ffcc;
+  border: none;
+  outline: none;
+  padding: 10px;
+  resize: none;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+
+/* OUTPUT */
+
+.output-section {
+  padding: 15px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background: white;
+  border: none;
+}
+
+#errorBox {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
